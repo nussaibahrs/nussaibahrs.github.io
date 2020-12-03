@@ -1,0 +1,23 @@
+# projects section data
+# If you don't have language feature(language.yml is empty), ignore "i18n" items
+# Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
+- name: coralTrace
+  gh_user: ''
+  url: http://tersane.palaeobiology.de/
+  repo: ''
+  img: images/tersane-logo.png
+  desc: Using the Paleobiology Database and the Erlangen PaleoReefs Database together with a new fossil trait database on extinct reef builders, this project aims to reveal the interplay of individualistic evolutionary fate and whole ecosystem changes in reefs over time.
+
+- name: Pal(a)eoScientometrics
+  gh_user: ''
+  url: https://paleoscientometrics.github.io/
+  repo:
+  img: images/paleoscientometrics.png
+  desc: Quantifying the power and knowledge imbalance in the field of palaeontology as a result of 'parachute' or 'exploitative' science. We focus on fieldwork practices and ethics as well as the publication process.
+
+- name: chronosphere
+  gh_user: ''
+  url: http://www.chronosphere-portal.org/
+  repo: ''
+  img: images/chronosphere.png
+  desc: An R package offering an interface to ecological, geological and paleontological data and other additional tools facilitating reproducibility of research.

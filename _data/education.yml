@@ -1,0 +1,18 @@
+# projects section data
+# If you don't have language feature(language.yml is empty), ignore "i18n" items
+# Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
+- name: Started PhD in Paleontology
+  desc: University of Erlangen-Nuremberg, Germany
+  year: "2019 - present"
+
+- name: Masters in Palaebiology
+  desc: University of Erlangen-Nuremberg, Germany
+  year: "2017-2019"
+
+- name: Masters in Physical Geography (with a year in Turkish)
+  desc: Ankara University, Turkey
+  year: "2013-2016"
+
+- name: Bachelor (Hons) in Geography
+  desc: King's College London, UK
+  year: "2009-2012"

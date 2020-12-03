@@ -1,0 +1,26 @@
+---
+layout: default
+robots: noindex
+permalink: /education
+---
+
+<h4 align="right"><a href="/">Close</a></h4>
+    <ul class="timeline">
+
+        {% for education in site.data.education %}
+
+          <li class="timeline-inverted">
+            <div class="timeline-heading2">
+                <h4>{{education.year}}</h4>
+            </div>
+            <div class="timeline-panel2">
+              <div class="timeline-heading">
+                <h4>{{education.name}}</h4>
+              </div>
+              <div class="timeline-body">
+                {{ education.desc | markdownify }}
+              </div>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>

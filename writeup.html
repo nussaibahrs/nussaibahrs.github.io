@@ -1,0 +1,23 @@
+---
+layout: default
+title: Writeup
+permalink: /writeup/
+lang: en
+---
+<h2>Writeups</h2>
+<ul class="timeline">
+  {% for write in site.writeup %}
+  <li class="timeline-inverted">
+    <div class="timeline-image">
+      <img class="img-me" src= "./{{write.title | downcase}}/img/logo.png" alt="">
+    </div>
+    <div class="timeline-panel">
+      <div class="timeline-heading">
+        <h4><a href="{{write.url}}">{{ write.title }}</a></h4>
+      </div>
+    </div>
+  </li>
+  
+
+  {% endfor %}
+</ul>

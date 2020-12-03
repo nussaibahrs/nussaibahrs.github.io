@@ -1,0 +1,40 @@
+---
+layout: default
+robots: noindex
+permalink: /projects
+---
+
+<h4 align="right"><a href="/">Close</a></h4>
+
+    <ul class="timeline">
+
+        {% for project in site.data.projects %}
+
+          <li class="timeline-inverted">
+            <div class="timeline-image">
+              <img class="img-me" src="{{ project.img | prepend: site.baseurl }}" alt="">
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                {% if project.gh_user == null or project.gh_user == '' %}
+                <h4><a href="{{ project.url }}" target="_blank">{{ project.name }}</a></h4>
+              </div>
+              <div class="timeline-body">
+                {{ project.desc | markdownify }}
+                                <div style="height: 10px;"></div>
+        {% else %}
+                <h4><a href="https://github.com/{{ project.gh_user }}/{{ project.repo }}" target="_blank">{{ project.name }}</a></h4>
+              </div>
+              <div class="timeline-body">
+                {{ project.desc | markdownify }}
+                <div user="{{ project.gh_user }}" repo="{{ project.repo }}" class="ghbtn" style="margin-top: 10px;">
+                  <a target="_blank" href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/stargazers"><i class="fa fa-star" aria-hidden="true"></i><span class="star"> ...</span></a>&emsp;&emsp;
+                  <a target="_blank" href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/network"><i class="fa fa-code-fork" aria-hidden="true"></i><span class="fork"> ...</span></a>&emsp;&emsp;
+                  <a target="_blank" href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/watchers"><i class="fa fa-eye" aria-hidden="true"></i>                <span class="watchers">...</span></a target="_blank" href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/watchers">
+                  <div style="height: 10px;"></div>
+                  {% endif %}
+              </div>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>

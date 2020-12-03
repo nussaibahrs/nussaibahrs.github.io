@@ -1,0 +1,44 @@
+# Site settings
+title: Nussaïbah Raja
+description: 'Business Card Page'
+url: '127.0.0.1'
+baseurl: ''
+profilepic: '/images/profile.png'
+bkimage: '/images/bk2.jpg'
+#google_analytics: UA-XXXXXX-X
+#font_awesome: 'XXXXXXXXXX.js'
+
+author:
+  name: 'Nussaïbah B Raja'
+  email: nussaibah.raja.schoob@fau.de
+  desc: PhD student at the University of Erlangen-Nuremberg, Germany
+  twitter_username: mauritiantales
+#  facebook_username: joshgerdes
+  github_username:  nussaibahrs
+  working: 'My research focuses on focuses on using novel computational approaches to understand the impact of environmental change on reefs and reef-building organisms. I am also interested in the practices behind fieldwork and research in the field of paleontology'
+#  linkedin_username: angpas
+#  meetup_name: Azure-Meetup-Rostock-MV
+
+# Build settings
+destination: _site
+kramdown:
+  syntax_highlighter: rouge
+  input: GFM
+
+
+collections:
+  writeup:
+    output: true
+
+sass:
+    sass_dir: _sass
+    style: compressed
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+#plugins: ['jekyll-paginate']
+exclude: ['README.md', 'screenshot-overview.png', 'writeup.html']
