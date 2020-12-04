@@ -62,6 +62,54 @@
                 </a>
               </li>
             {% endif %}
+            {% if site.author.email %}
+              <!-- Email -->
+              <li class="navigation__item">
+                <a href="mailto:{{ site.author.email }}" title="Email {{ site.author.email }}" target="_blank">
+                  <!--<i class="icon icon-mail"></i>-->
+                  <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                  <span class="label">Email</span>
+                </a>
+              </li>
+            {% endif %}
+
+            <br>
+
+            {% if site.author.orcid %}
+              <!-- GitHub -->
+              <li class="navigation__item">
+                <a href="https://orcid.org/{{ site.author.orcid}}" title="{{ site.author.orcid}} on ORCID" target="_blank">
+                  <!--<i class="icon icon-social-github"></i>-->
+                  <!--<i class="fab fa-researchgate" aria-hidden="true"></i>-->
+                  <i class="ai ai-orcid" aria-hidden="true"></i>
+                  <span class="label">ORCID</span>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.author.researchgate %}
+              <!-- GitHub -->
+              <li class="navigation__item">
+                <a href="https://www.researchgate.net/profile/{{ site.author.researchgate}}" title="{{ site.author.researchgate }} on ResearchGate" target="_blank">
+                  <!--<i class="icon icon-social-github"></i>-->
+                  <!--<i class="fab fa-researchgate" aria-hidden="true"></i>-->
+                  <i class="ai ai-researchgate" aria-hidden="true"></i>
+                  <span class="label">ResearchGate</span>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.author.google_scholar %}
+              <!-- GitHub -->
+              <li class="navigation__item">
+                <a href="https://scholar.google.de/citations?user={{ site.author.google_scholar}}" title="{{ site.author.google_scholar }} on Google Scholar" target="_blank">
+                  <!--<i class="icon icon-social-github"></i>-->
+                  <!--<i class="fab fa-researchgate" aria-hidden="true"></i>-->
+                  <i class="ai ai-google-scholar" aria-hidden="true"></i>
+                  <span class="label">Google Scholar</span>
+                </a>
+              </li>
+            {% endif %}
 
             {% if site.author.meetup_name %}
             <!-- Meetup -->
@@ -74,16 +122,7 @@
             </li>
             {% endif %}
 
-            {% if site.author.email %}
-              <!-- Email -->
-              <li class="navigation__item">
-                <a href="mailto:{{ site.author.email }}" title="Email {{ site.author.email }}" target="_blank">
-                  <!--<i class="icon icon-mail"></i>-->
-                  <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                  <span class="label">Email</span>
-                </a>
-              </li>
-            {% endif %}
+
                         </ul>
           </nav>
           <p class="panel-cover__description">{{site.author.working}}.</p>

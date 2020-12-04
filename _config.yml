@@ -6,7 +6,7 @@ baseurl: ''
 profilepic: '/images/profile.png'
 bkimage: '/images/bk2.jpg'
 #google_analytics: UA-XXXXXX-X
-#font_awesome: 'XXXXXXXXXX.js'
+font_awesome: 'eaa7b53a1d.js'
 
 author:
   name: 'Nussaïbah B Raja'
@@ -15,6 +15,9 @@ author:
   twitter_username: mauritiantales
 #  facebook_username: joshgerdes
   github_username:  nussaibahrs
+  researchgate: Nussaibah_Raja
+  google_scholar: 0sWlO5MAAAAJ
+  orcid: 0000-0002-0000-3944
   working: 'My research focuses on focuses on using novel computational approaches to understand the impact of environmental change on reefs and reef-building organisms. I am also interested in the practices behind fieldwork and research in the field of paleontology'
 #  linkedin_username: angpas
 #  meetup_name: Azure-Meetup-Rostock-MV
